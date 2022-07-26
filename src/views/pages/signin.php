@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset="utf-8" />
     <title>Login - Devsbook</title>
@@ -9,7 +9,7 @@
 <body>
 <header>
     <div class="container">
-        <a href=""><img src="<?=$base;?>/assets/images/devsbook_logo.png" /></a>
+        <a href="/"><img src="<?=$base;?>/assets/images/devsbook_logo.png" /></a>
     </div>
 </header>
 <section class="container main">

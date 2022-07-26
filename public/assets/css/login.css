@@ -91,3 +91,7 @@ form a {
     padding-left: 10px;
     margin-bottom: 20px;
 }
+.erro404 {
+    display: flex;
+    justify-content: center;
+}
