@@ -12,7 +12,7 @@
                             <div class="feed-new-avatar">
                                 <img src="<?=$base?>/media/avatars/avatar.jpg" />
                             </div>
-                            <div class="feed-new-input-placeholder">O que você está pensando, Neto?</div>
+                            <div class="feed-new-input-placeholder">O que você está pensando, <?=$loggedUser->name?>?</div>
                             <div class="feed-new-input" contenteditable="true"></div>
                             <div class="feed-new-send">
                                 <img src="<?=$base?>/assets/images/send.png" />
@@ -28,7 +28,7 @@
                                 <a href=""><img src="<?=$base?>/media/avatars/avatar.jpg" /></a>
                             </div>
                             <div class="feed-item-head-info">
-                                <a href=""><span class="fidi-name">Neto Rodrigues</span></a>
+                                <a href=""><span class="fidi-name"><?=$loggedUser->name?></span></a>
                                 <span class="fidi-action">fez um post</span>
                                 <br/>
                                 <span class="fidi-date">07/03/2020</span>
@@ -53,7 +53,7 @@
                                     <a href=""><img src="<?=$base?>/media/avatars/avatar.jpg" /></a>
                                 </div>
                                 <div class="fic-item-info">
-                                    <a href="">Neto Rodrigues</a>
+                                    <a href=""><?=$loggedUser->name?></a>
                                     Comentando no meu próprio post
                                 </div>
                             </div>
@@ -63,7 +63,7 @@
                                     <a href=""><img src="<?=$base?>/media/avatars/avatar.jpg" /></a>
                                 </div>
                                 <div class="fic-item-info">
-                                    <a href="">Neto Rodrigues</a>
+                                    <a href=""><?=$loggedUser->name?></a>
                                     Muito legal, parabéns!
                                 </div>
                             </div>

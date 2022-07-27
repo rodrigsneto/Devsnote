@@ -22,9 +22,9 @@
             </div>
             <div class="head-side-right">
                 <a href="<?=$base?>/perfil" class="user-area">
-                    <div class="user-area-text">Nome</div>
+                    <div class="user-area-text"><?=$loggedUser->name?></div>
                     <div class="user-area-icon">
-                        <img src="<?=$base?>/media/avatars/avatar.jpg" />
+                        <img src="<?=$base?>/media/avatars/<?=$loggedUser->avatar;?>" />
                     </div>
                 </a>
                 <a href="<?=$base?>/sair" class="user-logout">
@@ -34,12 +34,3 @@
         </div>
     </div>
 </header>
-<pre>
-<!-- DEBUG -->
-<?php
-echo "Mostrando o Logged User: ";
-print_r($loggedUser);
-var_dump($loggedUser);
-$userName = $loggedUser['name'];
-echo $userName ?>
-die;

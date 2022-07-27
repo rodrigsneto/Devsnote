@@ -19,3 +19,6 @@ $router->post('/cadastro', 'LoginController@signupAction');
 // $router->get('/pesquisa')
 // $router->get('/perfil')
 // $router->get('/sair')
+// $router->get('/amigos')
+// $router->get('/fotos')
+// $router->get('/config')
