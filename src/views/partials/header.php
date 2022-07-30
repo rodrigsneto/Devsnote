@@ -5,6 +5,8 @@
     <title>Devsbook</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
     <link rel="stylesheet" href="<?=$base?>/assets/css/style.css" />
+    <!-- lib de icons -->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 </head>
 <body>
 <header>
