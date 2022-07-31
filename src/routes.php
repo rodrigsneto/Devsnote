@@ -16,6 +16,9 @@ $router->get('/cadastro', 'LoginController@signup');
 // ROTA LOGIN - CHAMA O LOGINCONTROLLER - METODO signin - RESPONSAVEL PELO LOGIN DO USUARIO
 $router->post('/cadastro', 'LoginController@signupAction');
 
+// ROTA POST - RECEBER INFORMAÇÕES DA NOVA PUBLICAÇÃO
+$router->post('/post/new', 'PostController@new');
+
 // $router->get('/pesquisa')
 // $router->get('/perfil')
 // $router->get('/sair')

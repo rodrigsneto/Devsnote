@@ -3,8 +3,9 @@ namespace src\controllers;
 
 use \core\Controller;
 use \src\handlers\LoginHandler;
+use \src\handlers\PostHandler;
 
-class HomeController extends Controller {
+class PostController extends Controller {
 
     // DADOS DO USUARIO LOGADO
     private $loggedUser;
@@ -22,10 +23,22 @@ class HomeController extends Controller {
 
     }
 
-    public function index() {
-        $this->render('home',[
-                'loggedUser' => $this->loggedUser
-        ]);
+    public function new() {
+        // receber os dados, validar dados e usuario e insere dados no BD
+        $body = filter_input(INPUT_POST, 'body');
+
+        if($body) {
+
+            // ADICIONAR O POST
+            PostHandler::addPost(
+                $this->loggedUser->id,
+                'text',
+                $body
+            );
+        }
+
+        $this->redirect('/');
+
     }
 
 }

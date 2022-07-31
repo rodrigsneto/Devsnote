@@ -1,4 +1,4 @@
-<?=$render('header', ['loggedUser' => $loggedUser])?>
+<?=$render('header', ['loggedUser' => $loggedUser]);?>
 
 <section class="container main">
     <?=$render('sidebar')?>
@@ -9,7 +9,7 @@
             <div class="column pr-5">
 
 
-            <?= $render('feed-editor', ['loggedUser' => $loggedUser]) ;?>
+            <?= $render('feed-editor', ['user' => $loggedUser]) ; ?>
 
             <?= $render('feed-item', ['loggedUser' => $loggedUser]) ;?>
 
